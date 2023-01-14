@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 
-const { reportRequest } = require("./src/middleware/logger");
+const { reportRequest } = require("./src/middlewares/logger")
 
 app.use(cors());
 app.use(reportRequest);
